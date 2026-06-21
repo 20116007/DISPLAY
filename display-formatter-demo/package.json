@@ -1,0 +1,17 @@
+{
+  "name": "display-formatter-demo",
+  "version": "1.0.0",
+  "description": "Electron demo for @amot/display-formatter",
+  "main": "main.js",
+  "private": true,
+  "scripts": {
+    "start": "env -u ELECTRON_RUN_AS_NODE electron .",
+    "postinstall": "npm run build --prefix ../display-formatter"
+  },
+  "dependencies": {
+    "@amot/display-formatter": "file:../display-formatter"
+  },
+  "devDependencies": {
+    "electron": "^33.2.1"
+  }
+}

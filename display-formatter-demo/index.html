@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'"
+    />
+    <title>AMOT Display Formatter Demo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <p class="eyebrow">AMOT / AMOT-LITE</p>
+        <h1>Display Formatter Demo</h1>
+      </header>
+
+      <main class="panel">
+        <label class="field">
+          <span class="label">Value</span>
+          <input
+            id="valueInput"
+            type="text"
+            inputmode="decimal"
+            placeholder="Enter a number"
+            value="1234.5678"
+          />
+          <p id="errorOutput" class="error" hidden></p>
+        </label>
+
+        <label class="field">
+          <span class="label">Display Format</span>
+          <select id="formatSelect"></select>
+        </label>
+      </main>
+    </div>
+
+    <script src="renderer.js"></script>
+  </body>
+</html>
